@@ -6,6 +6,11 @@ Code accompanying the paper ["Unsupervised learning reveals landscape of local s
 
 All dependencies can be installed by installing COLLAPSE following the instructions [here](https://github.com/awfderry/COLLAPSE/tree/main).
 
+## Download fitted clustering model
+
+Fitted clustering models for various number of clusters `k` are available for download [here](https://zenodo.org/records/10699466). Download into the `data` folder of this repo to avoid issues when importing in the scripts below.
+
+The number of clusters controls the specificity of the resulting structural motifs; we recommend using `k=50000` for general use, and this is the value used in all analysis in our paper. 
 
 ## Embed a directory of PDB files using COLLAPSE
 
