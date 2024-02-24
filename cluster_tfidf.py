@@ -22,13 +22,16 @@ from collapse.utils import serialize, deserialize
 if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('cluster_sequences', type=str, help='cluster-featurized dataset produced by cluster_featurize.py (pkl format)')
-    parser.add_argument('id_to_label', type=str, help='mapping from id to labels (pkl format)')
     parser.add_argument('out_path', type=str, help='output file path (.pkl format)')
+    parser.add_argument('--id_to_label', type=str, default='', help='mapping from id to labels (pkl format)')
     parser.add_argument('--k', type=int, default=50000)
     args = parser.parse_args()
 
     sid_to_seq =  deserialize(args.cluster_sequences)
-    label_dict = deserialize(args.id_to_label)
+    if args.id_to_label != '':
+        label_dict = deserialize(args.id_to_label)
+    else:
+        label_dict = {}
     
     ids = []
     labels = []

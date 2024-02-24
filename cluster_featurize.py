@@ -14,7 +14,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('data_path', type=str)
     parser.add_argument('out_path', type=str)
-    parser.add_argument('out_fmt', type=str, default='pkl', help='output format (options: pkl or lmdb)')
+    parser.add_argument('--out_fmt', type=str, default='pkl', help='output format (options: pkl or lmdb)')
     parser.add_argument('--k', type=int, default=50000)
     parser.add_argument('--split_id', type=int, default=0)
     parser.add_argument('--num_splits', type=int, default=1)
