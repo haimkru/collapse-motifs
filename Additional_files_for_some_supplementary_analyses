@@ -1,0 +1,10 @@
+Additional files for some supplementary analyses
+
+run_clustering_higher_resolution.py - is intended to provide a higher resoultion of which K for the clustering should be used when determining how many K's to use for COLLAPSE clustering.
+Ploting_clustering_characteristics_per_k - This file creates figure s1 plot, so its a visualization tool of the data from : "run_clustering_higher_resolution.py"
+Pathogenic_Clusters_ClinVar_Analysis - This file gives us the pathogenic clusters from ClinVar
+Analysing_AfM_enrichment_Analysis- This file did the pathogenic clusters analysis for AlphaMissense Data
+parralel_coocruance_analysis_ligands- same as co occrance but it performs the co occurance analysis using multiple cores in parrallel, in reality this was used to get the co occurances.
+Tanimotos_all_by_all - This script takes the ligands from BioLip, and among the more common ligands, that are specific to multiple clusters, it perofrms  an all vs all tanimoto similarity assessment.
+
+
